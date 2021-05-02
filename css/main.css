@@ -24,6 +24,10 @@ body {
   flex-wrap: wrap;
   font-family: 'Poiret One', cursive;
 }
+.ipsGrid h1
+{
+  font-size: 2.5em;
+}
 .ipsGrid::before, .ipsGrid::after {
   display: table;
   content: "";
@@ -90,10 +94,6 @@ header
   header
   {
     font-size: 2em;
-  }
-  .ipsGrid h1
-  {
-    font-size: 2.5em;
   }
   .ipsGrid > [class*="ipsGrid_span"]
   {
