@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poiret+One&display=swap');
+body {
+  font-weight: 300;
+}
+.ipsType_right {
+  text-align: right;
+}
+.ipsType_center {
+  text-align: center;
+}
+.cInnerContent {
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ipsSpacer_bottom_double {
+  margin-bottom: 30px;
+}
+.ipsGrid {
+  display: inline-block;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Poiret One', cursive;
+}
+.ipsGrid::before, .ipsGrid::after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.ipsGrid > [class*="ipsGrid_span"] {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  box-sizing: border-box;
+}
+.ipsGrid > .ipsGrid_span5 {
+  width: 40.42553191489362%;
+}
+.ipsGrid > .ipsGrid_span7 {
+  width: 57.44680851063829%;
+}
+.ipsGrid > [class*="ipsGrid_span"] {
+  float: left;
+  margin-left: 2%;
+}
+.ipsGrid > [class*="ipsGrid_span"]:first-child {
+  margin-left: 0;
+}
+.feature {
+  display: flex;
+  align-items: center;
+}
+.card {
+  margin-bottom: 30px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #ffffff;
+/*   transition: 0.3s; */
+}
+.featured-image-container .card {
+  padding: 10px;
+  height: 0;
+  padding-bottom: calc(100% - 10px);
+}
+h2.heading_large {
+  font-size: 1.8em;
+}
+img {
+  max-width: 100%;
+}
+header
+{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3em;
+  font-family: 'Dancing Script', cursive;
+}
+
+.gs_reveal {
+  opacity: 0;
+  visibility: hidden;
+  will-change: transform, opacity;
+}
+@media(max-width: 600px)
+{
+  header
+  {
+    font-size: 2em;
+  }
+  .ipsGrid h1
+  {
+    font-size: 2.5em;
+  }
+  .ipsGrid > [class*="ipsGrid_span"]
+  {
+    text-align: center;
+  }
+  .ipsGrid > .ipsGrid_span5 {
+    width: 95%;
+  }
+  .ipsGrid > .ipsGrid_span7 {
+    width: 95%;
+  }
+  .feature
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  img
+  {
+    min-width: 100%;
+  }
+}
